@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Management Company Registration</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="v_form.css"> <script src="validation.js"></script> </head>
+<body>
+  <div class="container">
+    <h1>Company Profile</h1>
+    <form onsubmit="return validateForm();" action="v_form.php" method="post"> <div class="mb-3">
+        <label for="cin" class="form-label">CIN</label>
+        <input type="text" class="form-control" id="cin" placeholder="Enter CIN" name="cin">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email">
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="phone" placeholder="Enter phone number" name="phone">
+      </div>
+      <div class="mb-3">
+        <label for="address" class="form-label">Address</label>
+        <textarea class="form-control" id="address" rows="3" name="address"></textarea>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <label for="city" class="form-label">City</label>
+          <input type="text" class="form-control" id="city" name="city">
+        </div>
+        <div class="col-md-4">
+          <label for="state" class="form-label">State</label>
+          <input type="text" class="form-control" id="state" name="state">
+        </div>
+        <div class="col-md-4">
+          <label for="country" class="form-label">Country</label>
+          <input type="text" class="form-control" id="country" name="country">
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="pincode" class="form-label">Pincode</label>
+        <input type="text" class="form-control" id="pincode" name="pincode">
+      </div>
+      <div class="mb-3">
+        <label for="website" class="form-label">Website (Optional)</label>
+        <input type="url" class="form-control" id="website" placeholder="https://www.example.com" name="website">
+      </div>
+      <div class="mb-3">
+        <label for="company_name" class="form-label">Company Name</label>
+        <input type="text" class="form-control" id="company_name" placeholder="Enter Company Name" name="company_name" required>
+      </div>
+      
+      <div class="mb-3">
+        <label for="services" class="form-label">Services Offered</label>
+        <input type="text" class="form-control" id="services" placeholder="Comma separated list of services (e.g., Wedding Planning, Corporate Events)" name="services" required>
+      </div>
+      
+      <div class="mb-3">
+        <label for="employees" class="form-label">Number of Employees</label>
+        <input type="number" class="form-control" id="employees" placeholder="Enter Number of Employees" name="employees" min="1" required>
+      </div>
+      
+      <div class="mb-3">
+        <label for="years_experience" class="form-label">Years of Experience</label>
+        <input type="number" class="form-control" id="years_experience" placeholder="Enter Years of Experience" name="years_experience" min="0" required>
+      </div>
+            
+      <div class="mb-3">
+        <label for="social_media" class="form-label">Social Media IDs</label>
+        <input type="text" class="form-control" id="social_media" placeholder="social_media" name="social_media" >
+      </div>
+      
+      <div class="mb-3">
+        <label for="about" class="form-label">About Us</label>
+        <textarea class="form-control" id="about" rows="5" name="about" style="height: 150px;" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
